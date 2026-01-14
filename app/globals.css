@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #d0ddff;
+  --card: #FFFFFF;
+  --hover: #F1F5F9;
+  --border: #E2E8F0;
+
+  --text: #0F172A;
+  --muted: #334155;
+
+  --accent: #334155;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-style: italic;
+  font-family: Inter, sans-serif;
+}
+
+.bg-bg {
+  background: var(--bg);
+}
+
+.bg-card {
+  background: var(--card);
+}
+
+.bg-hover {
+  background: var(--hover);
+}
+
+.text-text {
+  color: var(--text);
+}
+
+.text-muted {
+  color: var(--muted);
+}
+
+.bg-accent {
+  background: var(--accent);
+}
+
+.text-dark {
+  color: var(--dark);
+}
+
+.border-border {
+  border-color: var(--border);
+}
+
+h1 {
+  font-size: clamp(2.2rem, 4vw, 3.75rem);
+}
+
+h2 {
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+}
+
+h3 {
+  font-size: clamp(1.15rem, 2.1vw, 1.45rem);
+}
+
+p {
+  font-size: clamp(0.95rem, 1.2vw, 1rem);
+  line-height: 1.6;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prevent horizontal scroll on mobile */
+body {
+  overflow-x: hidden;
+}
