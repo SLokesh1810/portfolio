@@ -6,10 +6,10 @@ import Resume from "@/public/resume.png";
 
 export default function ContactSection() {
     return (
-        <section className="col-span-1 sm:col-span-2 lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+        <section className="col-span-3 grid grid-cols-3 gap-3">
 
             {/* SOCIALS */}
-            <BentoCard>
+            <BentoCard className="col-span-2">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-0">
                     {/* Left text */}
                     <h2 className="font-semibold text-base sm:text-lg">Socials</h2>
@@ -17,12 +17,12 @@ export default function ContactSection() {
                     {/* Right icons */}
                     <div className="flex gap-4 sm:gap-6">
                         <SocialIcon
-                            href="https://linkedin.com"
+                            href="https://www.linkedin.com/in/slokesh1810/"
                             icon={LinkedIn}
                             label="LinkedIn"
                         />
                         <SocialIcon
-                            href="mailto:yourmail@example.com"
+                            href="mailto:slokesh1810@gmail.com"
                             icon={Mail}
                             label="Mail"
                         />
@@ -39,7 +39,7 @@ export default function ContactSection() {
                     {/* Right icon */}
                     <div className="flex">
                         <SocialIcon
-                            href="/resume.pdf"
+                            href="/Resume - Lokesh.pdf"
                             icon={Resume}
                             label="Resume"
                         />

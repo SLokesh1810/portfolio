@@ -2,7 +2,7 @@ import BentoCard from "./BentoCard";
 
 export default function AboutSection() {
     return (
-        <BentoCard className="col-span-1 sm:col-span-2">
+        <BentoCard className="col-span-2">
             <h2 className="font-semibold mb-2 sm:mb-3">About Me</h2>
             <p className="text-muted text-sm sm:text-base leading-relaxed">
                 Technology-focused problem solver with experience in Machine Learning

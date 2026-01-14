@@ -2,7 +2,7 @@ import NavItem from "@/components/NavItem";
 
 export default function Navbar() {
     return (
-        <nav className="flex justify-center py-4 sm:py-5 lg:py-6 sticky top-0 z-50 bg-bg/80 backdrop-blur-sm">
+        <nav className="flex justify-center bg-white-50 py-4 sm:py-5 lg:py-6 sticky top-0 z-50">
             <div
                 className="
           flex

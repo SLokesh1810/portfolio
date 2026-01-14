@@ -10,12 +10,12 @@ export default function SocailSection() {
             <h2 className="font-semibold mb-4 sm:mb-6 lg:mb-9">Socials</h2>
             <div className="flex gap-4 sm:gap-6 lg:gap-10 justify-center flex-wrap">
                 <SocialIcon
-                    href="https://linkedin.com"
+                    href="https://www.linkedin.com/in/slokesh1810/"
                     icon={LinkedIn}
                     label="LinkedIn"
                 />
                 <SocialIcon
-                    href="https://github.com"
+                    href="https://github.com/SLokesh1810"
                     icon={GitHub}
                     label="GitHub"
                 />
