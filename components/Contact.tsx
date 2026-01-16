@@ -8,11 +8,11 @@ export default function ContactSection() {
     return (
         <section className="col-span-3 grid grid-cols-3 gap-3">
 
-            {/* SOCIALS */}
+            {/* CONTACTS */}
             <BentoCard className="col-span-2">
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 sm:gap-0">
                     {/* Left text */}
-                    <h2 className="font-semibold text-base sm:text-lg">Socials</h2>
+                    <h2 className="font-semibold text-base sm:text-lg">Contacts</h2>
 
                     {/* Right icons */}
                     <div className="flex gap-4 sm:gap-6">
