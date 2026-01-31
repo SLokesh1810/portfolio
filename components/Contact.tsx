@@ -6,7 +6,7 @@ import Resume from "@/public/resume.png";
 
 export default function ContactSection() {
     return (
-        <section className="col-span-3 grid grid-cols-3 gap-3">
+        <section className="col-span-3 lg:col-span-5 grid grid-cols-3 gap-3">
 
             {/* CONTACTS */}
             <BentoCard className="col-span-2">

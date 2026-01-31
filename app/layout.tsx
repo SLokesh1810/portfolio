@@ -2,7 +2,7 @@ import "./globals.css";
 
 
 export const metadata = {
-  title: "Lokesh | Software Engineer",
+  title: "Lokesh | Portfolio",
   description: "Portfolio of Lokesh – Software Engineer (Backend & ML)",
 };
 

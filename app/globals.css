@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #799cf0;
-  --card: #ffffff65;
-  --hover: #F1F5F9;
-  --border: #E2E8F0;
+  --bg: #ffffff;
+  --card: #ff8011d8;
+  --hover: #acbfa471;
+  --border: #acbfa471;
 
-  --text: #0F172A;
-  --muted: #334155;
+  --text: #262626;
+  --muted: #262626;
 
-  --accent: #334155;
+  --accent: #ACBFA4;
 }
 
 body {
@@ -17,6 +17,7 @@ body {
   color: var(--text);
   font-style: italic;
   font-family: Inter, sans-serif;
+  overflow-x: hidden;
 }
 
 .bg-bg {
@@ -71,9 +72,4 @@ p {
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
-}
-
-/* Prevent horizontal scroll on mobile */
-body {
-  overflow-x: hidden;
 }

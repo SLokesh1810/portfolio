@@ -14,7 +14,7 @@ import CloudImg from "@/public/BgImg/cloudImg2.png";
 export default function Home() {
   return (
     <main className="min-h-screen bg-bg text-text">
-      <BackgroundSnowfall />
+      {/* <BackgroundSnowfall />
       <div className="fixed top-0 left-0 w-full h-[120px] sm:h-[160px] md:h-[200px] lg:h-[220px] z-0 pointer-events-none">
         <Image
           src={CloudImg}
@@ -23,19 +23,18 @@ export default function Home() {
           priority
           className="object-cover opacity-90"
         />
-      </div>
+      </div> */}
 
       <Navbar />
 
-      <div className="relative z-10 mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-6 sm:py-8 lg:py-10">
+      <div className="relative z-10 mt-0 px-4 sm:px-6 lg:px-8 py-6 sm:py-8 lg:py-10">
 
         <section
           className="
             grid
             grid-cols-3
-            gap-3
-            sm:gap-4
-            lg:gap-2
+            gap-1
+            lg:grid-cols-5
           "
         >
           <Hero />

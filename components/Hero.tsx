@@ -29,8 +29,7 @@ export default function HeroSection() {
             {/* HERO TEXT */}
             <BentoCard
                 className="col-span-3
-                grid
-                grid-cols-3">
+                lg:col-span-2">
                 <section
                     className="
                     col-span-2
@@ -62,7 +61,7 @@ export default function HeroSection() {
                             Software Engineer (ML & Backend)
                         </p>
 
-                        <p className="text-muted max-w-2xl mt-4">
+                        <p className="text-muted mt-4">
                             Building scalable systems and applied ML solutions
                         </p>
                     </div>
@@ -108,7 +107,7 @@ export default function HeroSection() {
                             description="I work primarily on backend systems using Python-based frameworks, focusing on API design, data handling, and reliability. I’ve built backend services that integrate machine learning models, databases, and frontend clients, and I’ve begun using CI pipelines to automate testing and ensure backend changes don’t break existing functionality. My goal is to design scalable, well-tested backend systems while improving my understanding of deployment workflows and system-level trade-offs." />
                         <WorkItem icon={AIMLImg} label="Machine Learning" classStyle={classStyle}
                             description="I’ve built and evaluated machine learning models on real datasets, focusing on data preprocessing, feature selection, model training, and evaluation rather than just using libraries blindly. My work includes building ML-powered applications where models are actually integrated into usable systems. I’m now aiming to go deeper into model reasoning, deployment workflows, and applied ML—building models that are reliable, interpretable, and usable in production environments." />
-                        <WorkItem icon={Opensrc} label="Open Source Contribution" classStyle={classStyle}
+                        <WorkItem icon={Opensrc} label="Open Source" classStyle={classStyle}
                             description="I’m actively working toward contributing to open-source projects by understanding real-world codebases, issue discussions, and collaboration workflows. I’m learning how to read existing code, identify meaningful problems, and contribute fixes or improvements that align with project standards. My goal is to consistently contribute high-quality code, improve documentation where it matters, and grow as a collaborative engineer by working with experienced maintainers and real production systems." />
                     </div>
                 </div>

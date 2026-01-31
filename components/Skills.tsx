@@ -24,7 +24,7 @@ export default function SkillSection() {
                     p-2 sm:p-3
                     shadow-sm
                     hover:scale-105
-                    hover:bg-blue-50
+                    bg-blue-50
                     duration-400
                     ease-in-out
                     cursor-pointer
@@ -33,9 +33,9 @@ export default function SkillSection() {
                     `;
     return (
         <>
-            <BentoCard className="col-span-3">
+            <BentoCard className="col-span-3 lg:col-span-1">
                 <h2 className="font-semibold">Programming Languages</h2>
-                <div className="mt-4 sm:col-span-3 grid grid-cols-3 gap-3 sm:gap-4">
+                <div className="mt-4 sm:col-span-3 grid grid-cols-3 gap-3 sm:gap-4 lg:grid-cols-1 lg:grid-rows-3">
                     <WorkItem icon={PythonLogo} label="Python" classStyle={classStyle}
                         description="I build software with a strong focus on correctness, readability, and real-world usability. Most of my work starts from problem understanding and flows through clean architecture, modular code, and iterative refinement. I’ve developed end-to-end applications where I handled logic, data flow, and integration rather than just isolated features. Going forward, I’m aiming to deepen my system-level thinking, write more production-grade code, and design software that scales cleanly as complexity grows." />
                     <WorkItem icon={JavaLogo} label="Java" classStyle={classStyle}
@@ -44,7 +44,7 @@ export default function SkillSection() {
                         description="I build software with a strong focus on correctness, readability, and real-world usability. Most of my work starts from problem understanding and flows through clean architecture, modular code, and iterative refinement. I’ve developed end-to-end applications where I handled logic, data flow, and integration rather than just isolated features. Going forward, I’m aiming to deepen my system-level thinking, write more production-grade code, and design software that scales cleanly as complexity grows." />
                 </div>
             </BentoCard>
-            <BentoCard className="col-span-3">
+            <BentoCard className="col-span-3 lg:col-span-4">
                 <h2 className="font-semibold">Skills</h2>
                 <div className="mt-4 sm:col-span-3 grid grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
                     <WorkItem icon={DjangoLogo} label="Django" classStyle={classStyle}
