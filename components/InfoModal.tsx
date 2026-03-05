@@ -1,6 +1,7 @@
 "use client";
 
-import { ReactNode } from "react";
+import { ReactNode, useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 
 interface InfoModalProps {
     isOpen: boolean;
@@ -15,14 +16,15 @@ export default function InfoModal({
     title = "Info",
     children,
 }: InfoModalProps) {
-    if (!isOpen) return null;
+    const [mounted, setMounted] = useState(false);
+    useEffect(() => setMounted(true), []);
 
-    return (
+    if (!isOpen || !mounted) return null;
+
+    const content = (
         <div
-            className="
-        fixed inset-0 z-50
-        flex items-center justify-center
-      "
+            className="fixed inset-0 flex items-center justify-center"
+            style={{ zIndex: 9999 }}
         >
             {/* Backdrop */}
             <div
@@ -72,4 +74,6 @@ export default function InfoModal({
             </div>
         </div>
     );
+
+    return createPortal(content, document.body);
 }

@@ -20,7 +20,7 @@ export default function Projects() {
                     rounded-lg
                     p-2 sm:p-3
                     shadow-sm
-                    bg-blue-50
+                    bg-item
                     hover:scale-105
                     duration-400
                     ease-in-out
@@ -30,65 +30,158 @@ export default function Projects() {
                     `;
     return (
         <>
+            {/* ===================== MindEase ===================== */}
+
             <BentoCard className="col-span-2 lg:col-span-3">
-                <h3 className="font-semibold mb-3 sm:mb-4 lg:mb-5 text-sm sm:text-base lg:text-lg">MindEase – Mental Health Management App (ML + Mobile App + Chatbot)</h3>
+                <h3 className="font-semibold mb-3 sm:mb-4 lg:mb-5 text-sm sm:text-base lg:text-lg">
+                    MindEase – ML-Powered Mental Health App
+                </h3>
                 <p className="text-sm sm:text-base leading-relaxed">
-                    Built a cross-platform Flutter application with a Flask (Python) backend to assess user mental well-being. Trained and deployed an ML model achieving 92% accuracy in real-time predictions and integrated an AI chatbot (Serene) to support interactive user engagement.
+                    Built an end-to-end ML application with real-time mental health risk prediction (92% accuracy), backend inference APIs, and a Flutter mobile interface. Integrated a conversational assistant and production-ready deployment workflows.
                 </p>
             </BentoCard>
+
             <BentoCard className="col-span-1 lg:col-span-2">
                 <h3 className="font-semibold text-center mb-3 sm:mb-4 lg:mb-5">Stack</h3>
-                <div className="mt-4 sm:col-span-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
-                    <WorkItem icon={FlaskLogo} label="Flask" classStyle={classStyle}
-                        description="I build software with a strong focus on correctness, readability, and real-world usability. Most of my work starts from problem understanding and flows through clean architecture, modular code, and iterative refinement. I’ve developed end-to-end applications where I handled logic, data flow, and integration rather than just isolated features. Going forward, I’m aiming to deepen my system-level thinking, write more production-grade code, and design software that scales cleanly as complexity grows." />
-                    <WorkItem icon={SklearnLogo} label="Scikit-learn" classStyle={classStyle}
-                        description="I build software with a strong focus on correctness, readability, and real-world usability. Most of my work starts from problem understanding and flows through clean architecture, modular code, and iterative refinement. I’ve developed end-to-end applications where I handled logic, data flow, and integration rather than just isolated features. Going forward, I’m aiming to deepen my system-level thinking, write more production-grade code, and design software that scales cleanly as complexity grows." />
-                    <WorkItem icon={DockerLogo} label="Docker" classStyle={classStyle}
-                        description="I build software with a strong focus on correctness, readability, and real-world usability. Most of my work starts from problem understanding and flows through clean architecture, modular code, and iterative refinement. I’ve developed end-to-end applications where I handled logic, data flow, and integration rather than just isolated features. Going forward, I’m aiming to deepen my system-level thinking, write more production-grade code, and design software that scales cleanly as complexity grows." />
-                    <WorkItem icon={GitHubActionsLogo} label="GitHub Actions" classStyle={classStyle}
-                        description="I build software with a strong focus on correctness, readability, and real-world usability. Most of my work starts from problem understanding and flows through clean architecture, modular code, and iterative refinement. I’ve developed end-to-end applications where I handled logic, data flow, and integration rather than just isolated features. Going forward, I’m aiming to deepen my system-level thinking, write more production-grade code, and design software that scales cleanly as complexity grows." />
-                    <WorkItem icon={FlutterLogo} label="Flutter (Basics)" classStyle={classStyle}
-                        description="I build software with a strong focus on correctness, readability, and real-world usability. Most of my work starts from problem understanding and flows through clean architecture, modular code, and iterative refinement. I’ve developed end-to-end applications where I handled logic, data flow, and integration rather than just isolated features. Going forward, I’m aiming to deepen my system-level thinking, write more production-grade code, and design software that scales cleanly as complexity grows." />
+                <div className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
+
+                    <WorkItem
+                        icon={FlaskLogo}
+                        label="Flask"
+                        classStyle={classStyle}
+                        description="Built REST APIs for real-time ML inference and request handling."
+                    />
+
+                    <WorkItem
+                        icon={SklearnLogo}
+                        label="Scikit-learn"
+                        classStyle={classStyle}
+                        description="Trained and evaluated Random Forest model (92% accuracy) for prediction."
+                    />
+
+                    <WorkItem
+                        icon={DockerLogo}
+                        label="Docker"
+                        classStyle={classStyle}
+                        description="Containerized inference service for reproducible deployment."
+                    />
+
+                    <WorkItem
+                        icon={GitHubActionsLogo}
+                        label="GitHub Actions"
+                        classStyle={classStyle}
+                        description="Implemented CI pipeline for automated testing and Docker builds."
+                    />
+
+                    <WorkItem
+                        icon={FlutterLogo}
+                        label="Flutter"
+                        classStyle={classStyle}
+                        description="Built cross-platform mobile UI integrated with backend APIs."
+                    />
+
                 </div>
             </BentoCard>
+
+
+
+            {/* ===================== FloatChat ===================== */}
+
             <BentoCard className="col-span-1 lg:col-span-2">
                 <h3 className="font-semibold text-center mb-3 sm:mb-4 lg:mb-5">Stack</h3>
-                <div className="mt-4 sm:col-span-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
-                    <WorkItem icon={FastAPILogo} label="FastAPI" classStyle={classStyle}
-                        description="I build software with a strong focus on correctness, readability, and real-world usability. Most of my work starts from problem understanding and flows through clean architecture, modular code, and iterative refinement. I’ve developed end-to-end applications where I handled logic, data flow, and integration rather than just isolated features. Going forward, I’m aiming to deepen my system-level thinking, write more production-grade code, and design software that scales cleanly as complexity grows." />
-                    <WorkItem icon={PythonLogo} label="Python" classStyle={classStyle}
-                        description="I build software with a strong focus on correctness, readability, and real-world usability. Most of my work starts from problem understanding and flows through clean architecture, modular code, and iterative refinement. I’ve developed end-to-end applications where I handled logic, data flow, and integration rather than just isolated features. Going forward, I’m aiming to deepen my system-level thinking, write more production-grade code, and design software that scales cleanly as complexity grows." />
-                    <WorkItem icon={PostgresLogo} label="PostgreSQL" classStyle={classStyle}
-                        description="I build software with a strong focus on correctness, readability, and real-world usability. Most of my work starts from problem understanding and flows through clean architecture, modular code, and iterative refinement. I’ve developed end-to-end applications where I handled logic, data flow, and integration rather than just isolated features. Going forward, I’m aiming to deepen my system-level thinking, write more production-grade code, and design software that scales cleanly as complexity grows." />
-                    <WorkItem icon={ParquetLogo} label="Parquet" classStyle={classStyle}
-                        description="I build software with a strong focus on correctness, readability, and real-world usability. Most of my work starts from problem understanding and flows through clean architecture, modular code, and iterative refinement. I’ve developed end-to-end applications where I handled logic, data flow, and integration rather than just isolated features. Going forward, I’m aiming to deepen my system-level thinking, write more production-grade code, and design software that scales cleanly as complexity grows." />
-                    <WorkItem icon={ChromaDBLogo} label="ChromaDB" classStyle={classStyle}
-                        description="I build software with a strong focus on correctness, readability, and real-world usability. Most of my work starts from problem understanding and flows through clean architecture, modular code, and iterative refinement. I’ve developed end-to-end applications where I handled logic, data flow, and integration rather than just isolated features. Going forward, I’m aiming to deepen my system-level thinking, write more production-grade code, and design software that scales cleanly as complexity grows." />
+                <div className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
+
+                    <WorkItem
+                        icon={FastAPILogo}
+                        label="FastAPI"
+                        classStyle={classStyle}
+                        description="Built structured APIs to access processed ocean datasets."
+                    />
+
+                    <WorkItem
+                        icon={PythonLogo}
+                        label="Python"
+                        classStyle={classStyle}
+                        description="Implemented ETL workflows, data transformation, and ingestion logic."
+                    />
+
+                    <WorkItem
+                        icon={PostgresLogo}
+                        label="PostgreSQL"
+                        classStyle={classStyle}
+                        description="Designed relational storage for processed oceanographic data."
+                    />
+
+                    <WorkItem
+                        icon={ParquetLogo}
+                        label="Parquet"
+                        classStyle={classStyle}
+                        description="Used columnar storage format for efficient large-scale data processing."
+                    />
+
+                    <WorkItem
+                        icon={ChromaDBLogo}
+                        label="ChromaDB"
+                        classStyle={classStyle}
+                        description="Stored vectorized metadata for retrieval-based workflows."
+                    />
+
                 </div>
             </BentoCard>
             <BentoCard className="col-span-2 lg:col-span-3">
-                <h3 className="font-semibold mb-3 sm:mb-4 lg:mb-5 text-sm sm:text-base lg:text-lg">FloatChat – AI Ocean Data Pipeline (Smart India Hackathon 2025 Participant)</h3>
+                <h3 className="font-semibold mb-3 sm:mb-4 lg:mb-5 text-sm sm:text-base lg:text-lg">
+                    FloatChat – AI Ocean Data Pipeline
+                </h3>
                 <p className="text-sm sm:text-base leading-relaxed">
-                    Designed and implemented an end-to-end data pipeline to ingest, clean, and process 10,000+ real-time ARGO float records from .nc files into Parquet, PostgreSQL, and ChromaDB. Automated the complete workflow using Python and Pandas for scalable and reliable data ingestion.
+                    Designed an end-to-end ETL pipeline to ingest and process 10,000+ ARGO float records from NetCDF files into Parquet and PostgreSQL. Optimized data transformation and storage for scalable querying and retrieval workflows.
                 </p>
             </BentoCard>
+
+
+
+            {/* ===================== Internship ===================== */}
+
             <BentoCard className="col-span-2 lg:col-span-3">
-                <h3 className="font-semibold mb-3 sm:mb-4 lg:mb-5 text-sm sm:text-base lg:text-lg">Data Science Internship - Corizo (Powered by Wipro) - July 2024 to Sep 2024</h3>
+                <h3 className="font-semibold mb-3 sm:mb-4 lg:mb-5 text-sm sm:text-base lg:text-lg">
+                    Data Science Internship – Corizo (Powered by Wipro)
+                </h3>
                 <p className="text-sm sm:text-base leading-relaxed">
-                    Developed an ML classifier to predict manufacturing yield using 1,567 samples and 591 sensor features. Applied feature selection and evaluated Random Forest, SVM, and Naive Bayes models, with Random Forest achieving the best accuracy and reliability. Also built an independent model to classify BMI by gender.
+                    Developed ML models to predict manufacturing yield using 1,567 samples and 591 sensor features. Performed feature selection, model comparison (Random Forest, SVM, Naive Bayes), and cross-validation to identify the most reliable predictive approach.
                 </p>
             </BentoCard>
+
             <BentoCard className="col-span-1 lg:col-span-2">
-                <h3 className="font-semibold text-center mb-3 sm:mb-4 lg:mb-5">Learned</h3>
-                <div className="mt-4 sm:col-span-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
-                    <WorkItem icon={PythonLogo} label="Python" classStyle={classStyle}
-                        description="I build software with a strong focus on correctness, readability, and real-world usability. Most of my work starts from problem understanding and flows through clean architecture, modular code, and iterative refinement. I’ve developed end-to-end applications where I handled logic, data flow, and integration rather than just isolated features. Going forward, I’m aiming to deepen my system-level thinking, write more production-grade code, and design software that scales cleanly as complexity grows." />
-                    <WorkItem icon={PandasLogo} label="Pandas" classStyle={classStyle}
-                        description="I build software with a strong focus on correctness, readability, and real-world usability. Most of my work starts from problem understanding and flows through clean architecture, modular code, and iterative refinement. I’ve developed end-to-end applications where I handled logic, data flow, and integration rather than just isolated features. Going forward, I’m aiming to deepen my system-level thinking, write more production-grade code, and design software that scales cleanly as complexity grows." />
-                    <WorkItem icon={NumpyLogo} label="NumPy" classStyle={classStyle}
-                        description="I build software with a strong focus on correctness, readability, and real-world usability. Most of my work starts from problem understanding and flows through clean architecture, modular code, and iterative refinement. I’ve developed end-to-end applications where I handled logic, data flow, and integration rather than just isolated features. Going forward, I’m aiming to deepen my system-level thinking, write more production-grade code, and design software that scales cleanly as complexity grows." />
-                    <WorkItem icon={SklearnLogo} label="Scikit-learn" classStyle={classStyle}
-                        description="I build software with a strong focus on correctness, readability, and real-world usability. Most of my work starts from problem understanding and flows through clean architecture, modular code, and iterative refinement. I’ve developed end-to-end applications where I handled logic, data flow, and integration rather than just isolated features. Going forward, I’m aiming to deepen my system-level thinking, write more production-grade code, and design software that scales cleanly as complexity grows." />
+                <h3 className="font-semibold text-center mb-3 sm:mb-4 lg:mb-5">Core Tools Used</h3>
+                <div className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
+
+                    <WorkItem
+                        icon={PythonLogo}
+                        label="Python"
+                        classStyle={classStyle}
+                        description="Implemented preprocessing, feature engineering, and modeling workflows."
+                    />
+
+                    <WorkItem
+                        icon={PandasLogo}
+                        label="Pandas"
+                        classStyle={classStyle}
+                        description="Handled dataset cleaning, transformation, and feature preparation."
+                    />
+
+                    <WorkItem
+                        icon={NumpyLogo}
+                        label="NumPy"
+                        classStyle={classStyle}
+                        description="Performed numerical operations for model input processing."
+                    />
+
+                    <WorkItem
+                        icon={SklearnLogo}
+                        label="Scikit-learn"
+                        classStyle={classStyle}
+                        description="Trained and evaluated classification models with validation techniques."
+                    />
+
                 </div>
             </BentoCard>
         </>

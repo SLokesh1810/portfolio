@@ -35,7 +35,7 @@ export default function WorkItem({
                 </div>
 
                 {/* Label */}
-                <p className="text-xs sm:text-sm text-muted leading-tight">
+                <p className="text-xs sm:text-sm text-item leading-tight">
                     {label}
                 </p>
             </button>

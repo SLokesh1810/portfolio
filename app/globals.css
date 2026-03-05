@@ -1,59 +1,86 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #ffffff;
-  --card: #ff8011d8;
-  --hover: #acbfa471;
-  --border: #acbfa471;
+  --bg: #2e2e2e;
+  --card: #1f1f1f;
+  --alter-card: #ffffffe1;
+  --hover: #2d2d2d;
+  --border: #404040;
+  --text: #ffffff;
+  --muted: #bebebe;
+  --nav-text: #ffffff;
+  --item: #d8d8d8;
+  --item-text: #000000;
+  --card-shadow: #d3d3d380;
+}
 
-  --text: #262626;
-  --muted: #262626;
-
-  --accent: #ACBFA4;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--bg);
-  color: var(--text);
   font-style: italic;
   font-family: Inter, sans-serif;
   overflow-x: hidden;
 }
 
+.name-font {
+  font-family: var(--font-alex-brush), cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.card-shadow {
+  box-shadow: 0 0 10px var(--card-shadow);
+}
+
 .bg-bg {
-  background: var(--bg);
+  background: var(--card);
 }
 
 .bg-card {
   background: var(--card);
 }
 
+.bg-alter-card {
+  background: var(--alter-card);
+}
+
 .bg-hover {
   background: var(--hover);
+}
+
+.bg-item {
+  background: var(--item);
 }
 
 .text-text {
   color: var(--text);
 }
 
+.text-item {
+  color: var(--item-text);
+}
+
+.text-nav {
+  color: var(--nav-text);
+}
+
 .text-muted {
   color: var(--muted);
-}
-
-.bg-accent {
-  background: var(--accent);
-}
-
-.text-dark {
-  color: var(--dark);
 }
 
 .border-border {
   border-color: var(--border);
 }
 
+.text-large {
+  font-size: clamp(8rem, 20vw, 15rem);
+}
+
 h1 {
-  font-size: clamp(2.2rem, 4vw, 3.75rem);
+  font-size: clamp(5rem, 14vw, 6rem);
 }
 
 h2 {
@@ -69,7 +96,102 @@ p {
   line-height: 1.6;
 }
 
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
+/* Welcome Screen Styles */
+.welcome-container {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 2rem 1rem;
+}
+
+.welcome-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  max-width: 42rem;
+}
+
+/* Animated gradient background */
+.welcome-gradient {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 60% at 50% 40%,
+      rgba(255, 255, 255, 0.08) 0%,
+      transparent 55%);
+  animation: pulse-glow 5s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.7;
+    transform: scale(1.05);
+  }
+}
+
+/* Welcome text */
+.welcome-text {
+  font-family: var(--font-lobster-two), cursive;
+  font-size: clamp(3.5rem, 12vw, 8rem);
+  font-weight: 400;
+  color: var(--text);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35em;
+  justify-content: center;
+  align-items: baseline;
+  position: relative;
+  z-index: 2;
+  line-height: 1.15;
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Tagline under welcome */
+.welcome-tagline {
+  margin-top: 1.25rem;
+  font-size: clamp(0.9rem, 1.5vw, 1.05rem);
+  color: var(--muted);
+  font-style: normal;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-family: Inter, sans-serif;
+}
+
+/* Smooth word fade-in animation */
+.welcome-word {
+  display: inline-block;
+  opacity: 0;
+  animation: smooth-fade-in 0.6s ease-out forwards;
+}
+
+@keyframes smooth-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .welcome-text {
+    gap: 0.2em;
+  }
+
+  .welcome-tagline {
+    letter-spacing: 0.08em;
+  }
 }
